@@ -20,7 +20,7 @@ scoop install rux-lang/rux
 
 | Package | Description  | Version |
 | ------- | ------------ | ------- |
-| `rux`   | Rux compiler | 0.1.0   |
+| `rux`   | Rux compiler | Latest  |
 
 ## Requirements
 
