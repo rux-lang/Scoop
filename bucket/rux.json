@@ -1,22 +1,22 @@
 {
   "version": "0.3.0",
-  "description": "Rux compiler",
-  "homepage": "https://github.com/rux-lang/Rux",
+  "description": "A fast, compiled, strongly typed, multi-paradigm programming language.",
+  "homepage": "https://rux-lang.dev",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/rux-lang/Rux/releases/download/v0.3.0/rux-v0.3.0-win-x64.zip",
+      "url": "https://github.com/musicvano/Rux/releases/download/v0.3.0/rux-windows.zip",
       "hash": "F3977EE47AAC64D25E903A45B64678D5EBB8545C8032DAA6175B3671D998C5DA"
     }
   },
   "bin": "rux.exe",
   "checkver": {
-    "github": "https://github.com/rux-lang/Rux"
+    "github": "https://github.com/musicvano/Rux"
   },
   "autoupdate": {
     "architecture": {
       "64bit": {
-        "url": "https://github.com/rux-lang/Rux/releases/download/v$version/rux-v$version-win-x64.zip"
+        "url": "https://github.com/musicvano/Rux/releases/download/v$version/rux-windows.zip"
       }
     }
   }

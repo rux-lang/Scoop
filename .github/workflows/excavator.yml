@@ -1,0 +1,28 @@
+name: Excavator
+
+# Excavator periodically checks the upstream repo for new releases and, on a
+# version bump, updates the manifest's version, download URL, and hash, then
+# commits the change. Runs with the bucket's own token — no extra secrets.
+on:
+  schedule:
+    - cron: '0 */12 * * *'   # every 12 hours
+  workflow_dispatch:          # allow manual runs from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  excavate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Update manifests
+        uses: ScoopInstaller/GithubActions@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
