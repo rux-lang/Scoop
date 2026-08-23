@@ -29,4 +29,4 @@ scoop install rux-lang/rux
 
 ## License
 
-[MIT](LICENSE)
+Licensed under the [MIT License](LICENSE.md).
